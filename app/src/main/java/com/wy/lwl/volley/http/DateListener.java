@@ -8,5 +8,5 @@ package com.wy.lwl.volley.http;
 public interface DateListener<M> {
     //回调结果使用泛型
     void onSuccess(M m);
-    void onFail();
+    void onFail(String error);
 }

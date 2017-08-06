@@ -77,7 +77,7 @@ public class JsonHttpService implements HttpService{
                     e1.printStackTrace();
                 }
             } else {
-                httpListener.onFail();
+                httpListener.onFail(conn.getResponseMessage());
             }
 
         } catch (MalformedURLException e1) {

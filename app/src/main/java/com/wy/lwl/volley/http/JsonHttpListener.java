@@ -38,6 +38,11 @@ public class JsonHttpListener<M> implements HttpListener{
         });
     }
 
+    @Override
+    public void onFail(String error) {
+        dateListener.onFail(error);
+    }
+
     /**
      * Inputstream转string
      * @param inputStream
@@ -56,8 +61,5 @@ public class JsonHttpListener<M> implements HttpListener{
         return out.toString();
     }
 
-    @Override
-    public void onFail() {
 
-    }
 }

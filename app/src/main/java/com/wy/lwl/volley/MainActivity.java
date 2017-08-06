@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(Object o) {
                 String result = JSONObject.toJSON(o).toString();
-                Log.e("-------->",result);
+                Log.e("success-------->",result);
             }
 
             @Override
-            public void onFail() {
-
+            public void onFail(String error) {
+                Log.e("fail-------->",error);
             }
         });
     }

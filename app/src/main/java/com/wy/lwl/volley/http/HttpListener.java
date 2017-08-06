@@ -11,5 +11,5 @@ public interface HttpListener {
     //接收上一个接口的结果
     void onSuccess(InputStream inputStream);
 
-    void onFail();
+    void onFail(String error);
 }
